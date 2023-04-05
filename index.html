@@ -4,10 +4,19 @@
 <head> CAR</head>
 <br>
 <body>
-    <nav>
-<a  href="index1.html">BUY</a>   
+<nav>
+<a  href="index1.html" class="n1 n2">Car Page</a>
+</nav>
+<br>
+<nav id="w1"><a  href="index2.html" class="n1 n2">Info/Sell</a>
+</nav>
 
 <script src="javascript.js"></script>
+
+  
+</body>
+
+</html>
 
 <style>
 head {
@@ -16,20 +25,57 @@ font-family: 'Courier New', Courier, monospace;
 body {
  background-image: url("https://maserati.scene7.com/is/image/maserati/maserati/international/Models/my23/granturismo/assets/GT_Modena_hero_DE2.jpg?$1920x2000$&fit=constrain");
  float: right;
- 
+ background-attachment: fixed;
  font-size: 200px;
 }
 nav {
 float: right;
 font-size: 70px;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 a {
 padding-left: 30px;
 padding-right: 10px;
+margin-bottom: 100px;
 color: white;
 border-radius: 0px 15px;
 background-color: black;
 text-decoration: none;
+text-align: center;
+transition: all 0.5s;
 }
 
+.n1:active:active {
+  border-radius: 5px;
+  padding: 15px 55px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.n1:active:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+  text-align: center;
+}
+.n2 {
+  background-color: black;
+  box-shadow: 3px 5px 5px #888888;
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+.n2:hover {
+  background-color: transparent;
+  color: black;
+  padding-right: 100px;
+  transform: scale(1.1);
+  text-align: center;
+}
 </style>
