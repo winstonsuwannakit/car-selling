@@ -2,12 +2,14 @@
 <html lang="en">
 <title>Home</title>
 <head><h1><a  href="index.html" class="n1 n2">Car</a></h1></head>
+<div class="d3">
+<p class="p2">View Only</p></div><br><br>
 <body>
 <br><br>
 <div class="d1">
 <img src="https://cdn05.carsforsale.com/217a3ec510162971fe0a37012eb051cb/1280x960/2023-mazda-mx-5-miata-grand-touring-manual.jpg">
 <p class="p1">
-2023 Mazda Mx-5 Miata<br>
+2023 Mazda Mx-5 Miata RF<br>
 Grand touring manual  <br><br>
 $34,505 $452/mo*<br>
 8 miles<br>
@@ -23,7 +25,7 @@ MILEAGE
 105 miles below avg.<br>
 Chicaco, CA
 </p><br>
-<Button class="bu1">B<br>U<br>Y</Button>
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408/inventory/details/91715869" target="_blank" class="butA1"><Button class="bu1">B<br>U<br>Y</Button></a>
 </div>
 <br><br><br><br>
 <div class="d1">
@@ -45,7 +47,7 @@ MILEAGE
 109 miles below avg.<br>
 Chico, CA
 </p><br>
-<Button class="bu1">B<br>U<br>Y</Button>
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408/inventory/details/92542727" target="_blank" class="butA1"><Button class="bu1">B<br>U<br>  Y</Button></a>
 </div>
 <br><br><br><br>
 <div class="d1">
@@ -67,9 +69,56 @@ Chico, CA
   2 miles above avg.<br>
   Chico, CA<br>
 </p>
-<Button class="bu1">B<br>U<br>Y</Button>
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408/inventory/details/91775306" target="_blank" class="butA1"><Button class="bu1">B<br>U<br>  Y</Button></a>
 </div>
-
+<br><br><br><br>
+<div class="d1">
+<img src="https://cdn05.carsforsale.com/3ef41172ac44972ecdf267363164d16b/800x600/2021-mazda-mazda3-sedan-preferred-4dr-sedan.jpg">
+<p class="p1">
+2021 Mazda Mazda3 Sedan<br>
+Preferred 4dr Sedan<br><br>
+$24,988 $372/mo*<br>
+14,598 miles<br>
+Engine:
+2.5L I4
+Drivetrain:
+FWD
+Days Listed
+120.<br>
+PRICE
+$1,408 above avg.
+MILEAGE
+35,591 miles avg.<br>
+Chico, CA<br>
+</p>
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408/inventory/details/90333679" target="_blank" class="butA1"><Button class="bu1">B<br>U<br>  Y</Button></a>
+</div>
+<br><br><br><br>
+<div class="d1">
+<img src="https://cdn05.carsforsale.com/3181d3e0a6211cb5211e8042d7ac4ec4/800x600/2023-volkswagen-taos-se-4motion-awd-4dr-suv.jpg">
+<p class="p1">
+2023 Volkswagen Taos<br>
+AWD SE 4Motion 4dr SUV<br><br>
+$33,473 $437/mo*<br>
+16 miles<br>
+Engine:
+1.5L I4
+Drivetrain:
+AWD
+Days Listed
+63.<br>
+PRICE
+$584 above avg.
+MILEAGE
+127 miles below avg.<br>
+Chico, CA<br>
+</p>
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408/inventory/details/91640986" target="_blank" class="butA1"><Button class="bu1">B<br>U<br>  Y</Button></a>
+</div>
+<br><br><br>
+<div class="d4">
+<a href="https://www.carsforsale.com/used-car-dealer/chico-volkswagen-chico-ca-d282408" target="_blank" class="button7" style="vertical-align:middle"><span>More!</span></a>
+</div>
 <script src="javascript.js"></script>
 
 </body>
@@ -77,6 +126,30 @@ Chico, CA
 </html>
 
 <style>
+:root {
+  --white: #FFFFFF;
+  --black: #000;
+  --grey: #888888;
+}
+a {
+  height: 0px;
+  padding: 0px;
+  background-color: #000;
+}
+.d3 {
+display: flex;
+margin: auto auto auto;
+}
+.p2 {
+display: flex;
+margin: auto;
+font-size: 75px;
+color: white;
+border: solid rgba(#000, .03);
+padding: 0 1em;
+width: fit-content;
+background-color:rgba(0, 63, 122, 0.5);
+}
 body {
 background-image: url("https://wallpapers.com/images/featured/mbqnegfb36hohpah.jpg");
 background-attachment: fixed;
@@ -89,6 +162,7 @@ color: white;
 .d1 {
 display: flex;
 margin: auto auto auto;
+
 }
 .p1 {
 display: flex;
@@ -97,6 +171,10 @@ margin: auto;
 font-size: 45px;
 color: white;
 font-weight: bold;
+border: solid rgba(#000, .03);
+padding: 0 1em;
+width: fit-content;
+background-color:rgba(0, 63, 122, 0.5);
 }
 .d2 {
 display: flex;
@@ -107,21 +185,24 @@ img {
 width: 600px;
 }
 .bu1 {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  width: 50px;
-  cursor: pointer;
-  margin: 5px;
+display: flex;
+text-decoration: none;
+display: inline-block;
+background-color: black;
+color: white;
+font-size: 40px;
+width: 50px;
+height: 407px;
+cursor: pointer;
+margin: 5px;
+text-align: center;
 }
 .bu1:hover:hover {
-  color: white;
-  background-color: transparent;
-  transition: all .3s ease-in-out;
+color: white;
+background-color: transparent;
+transition: all .3s ease-in-out;
 }
-a {
+.n1 {
 padding-right: 30px;
 padding-left: 10px;
 margin-bottom: 100px;
@@ -132,34 +213,81 @@ text-decoration: none;
 text-align: center;
 }
 .n1:active:active {
-  border-radius: 5px;
-  padding: 15px 55px;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 20px;
-  color: white;
-  position: relative;
-  display: inline-block;
-  text-align: center;
+border-radius: 5px;
+padding: 15px 55px;
+font-size: 22px;
+text-decoration: none;
+margin: 20px;
+color: white;
+position: relative;
+display: inline-block;
+text-align: center;
 }
 .n1:active:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-  text-align: center;
+transform: translate(0px, 5px);
+-webkit-transform: translate(0px, 5px);
+box-shadow: 0px 1px 0px 0px;
+text-align: center;
 }
 .n2 {
-  background-color: black;
-  box-shadow: 3px 5px 5px #888888;
-  border-radius: 2px;
-  transition: all .3s ease-in-out;
-  text-align: center;
+background-color: black;
+box-shadow: 3px 5px 5px var(--grey);
+border-radius: 2px;
+transition: all .3s ease-in-out;
+text-align: center;
 }
 .n2:hover {
-  background-color: transparent;
-  color: white;
-  padding-right: 100px;
-  transform: scale(1.1);
-  text-align: center;
+background-color: transparent;
+color: white;
+padding-right: 100px;
+transform: scale(1.1);
+text-align: center;
+}
+.d4 {
+display: flex;
+margin: auto auto auto;
+height: 70px;
+}
+.button7 {
+display: inline-block;
+background-color: black;
+color: white;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 250px;
+height: 30px;
+transition: all 0.3s;
+cursor: pointer;
+margin: auto;
+}
+.button7:hover {
+background-color: transparent;
+color: black;
+}
+
+.button7 span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button7 span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.3s;
+}
+
+.button7:hover span {
+padding-right: 25px;
+}
+
+.button7:hover span:after {
+opacity: 1;
+right: 0;
 }
 </style>
